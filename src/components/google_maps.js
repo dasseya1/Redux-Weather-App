@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class GoogleMap extends Component {
+class GoogleMap extends Component {
     componentDidMount() {
         new google.maps.Map(this.refs.map, {
             zoom: 12,
@@ -14,3 +14,5 @@ export default class GoogleMap extends Component {
         return <div ref="map" />;
     }
 }
+
+export default GoogleMap;
